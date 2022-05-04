@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;   /* pour que les bordures soient prisent en compte dans mes mesures */
+}
+
+body{
+    margin: 0px; /* car 8px avec Chrome par défaut */
+}
+
+
+header{
+    font-family:'Shrikhand';
+    text-align: center;
+    box-shadow: 0px 4px 4px #c5cccc;
+    padding: 1.5px;
+}
