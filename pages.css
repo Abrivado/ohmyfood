@@ -221,11 +221,47 @@ button:hover{
 
 
 
-.apparition {     /* apparition progressive menu*/
+.apparition_entree {     /* apparition progressive menu*/
     animation: apparition 1s ease-out;
 }
 
-@keyframes apparition{     /* apparition progressive menu*/
+@keyframes apparition_entree{     /* apparition progressive entrées*/
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.apparition_plat {     /* apparition progressive plats*/
+    animation: apparition 1s ease-out backwards;
+    animation-delay: 0.75s;
+}
+
+@keyframes apparition{     /* apparition progressive plats*/
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.apparition_dessert {     /* apparition progressive plats*/
+    animation: apparition 1s ease-out backwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes apparition{     /* apparition progressive plats*/
     from {
         opacity: 0;
         transform: translateY(20px);
