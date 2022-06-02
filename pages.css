@@ -13,6 +13,43 @@ body{
 }
 
 
+                                    /* L O A D I N G   S P I N N E R  */
+
+
+.loader{   /* page de chargement */
+    background-color: #fafafa;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 100vp;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.8;
+    animation: loading 0.3s 2s forwards;
+    transform-origin: top;
+}
+
+@keyframes loading {   /* animation page de chargement */
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+.loader i {             /* icone couvert */
+    margin-left: 48.5%;
+    animation: spinner 1s linear infinite
+}   
+
+@keyframes spinner {   /* animation rotation icone couvert */
+    to {
+        transform: rotate(360deg)
+    }  
+    
+}
+
 
                                           /* H E A D E R */
 
@@ -192,11 +229,18 @@ button:hover{
 
 }
 
-.flex_check i{            /* icone check */
+
+
+
+
+/* icone check */
+/* 
+.flex_check i{            
     color: white;
     padding: 20px 20px 20px 20px;
     font-size: 20px;
 }
+
 
 
 .boxMenu:hover  .flex_check i{
@@ -217,6 +261,43 @@ button:hover{
     }
 
 }
+
+
+.box_test{
+    width: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.prix_test{
+    width: 60px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+
+}
+
+.check_test{
+    width: 60px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #99E2D0;
+    border-radius: 0 15px 15px 0;
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -272,19 +353,6 @@ button:hover{
         transform: translateY(0);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
